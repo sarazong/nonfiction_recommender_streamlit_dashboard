@@ -73,7 +73,7 @@ with sample_books:
 with recommender1:
     st.header("Recommendations for you based on book summary:")
     #read in the data
-    df_rec = pd.read_pickle("data/GloVe_embedding_for_recommendation.pkl")
+    df_rec = pd.read_csv("data/GloVe_embedding_for_recommendation.csv")
     
     #function for book recommendation based on book summary
     def recommend(title, num_bks = 1):
